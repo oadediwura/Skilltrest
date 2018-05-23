@@ -14,139 +14,6 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Skilltrest" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleAspectFill" semanticContentAttribute="spatial" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" semanticContentAttribute="spatial" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Sea Blue" highlightedImage="Sea Blue" translatesAutoresizingMaskIntoConstraints="NO" id="shX-t1-5Jf">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="668"/>
-                            </imageView>
-                            <view contentMode="scaleAspectFill" semanticContentAttribute="spatial" translatesAutoresizingMaskIntoConstraints="NO" id="GDx-80-jRZ">
-                                <rect key="frame" x="0.0" y="65" width="375" height="547"/>
-                                <subviews>
-                                    <searchBar contentMode="redraw" fixedFrame="YES" searchBarStyle="prominent" text="search" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8L-UG-H5x">
-                                        <rect key="frame" x="0.0" y="0.0" width="310" height="56"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                        <color key="barTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <scopeButtonTitles>
-                                            <string>search</string>
-                                        </scopeButtonTitles>
-                                        <connections>
-                                            <outlet property="delegate" destination="BYZ-38-t0r" id="asp-xz-oYX"/>
-                                        </connections>
-                                    </searchBar>
-                                    <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NqU-mb-JdI">
-                                        <rect key="frame" x="328" y="3" width="59" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button" image="filter"/>
-                                    </button>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mxc-hv-ABx">
-                                        <rect key="frame" x="0.0" y="56" width="375" height="74"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" alignment="center" spacing="20" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hye-u6-GdA">
-                                                <rect key="frame" x="8" y="8" width="46" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <rect key="contentStretch" x="0.45000000000000001" y="0.0" width="1" height="1"/>
-                                            </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ib-K5-zqh">
-                                                <rect key="frame" x="8" y="16" width="68" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Music" image="icons8-musical-notes-filled-50"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQN-Mf-gTb">
-                                                <rect key="frame" x="93" y="12" width="54" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Coder" image="icons8-code-50"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7y-5h-jzK">
-                                                <rect key="frame" x="161" y="12" width="53" height="54"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Stylist" image="icons8-barbershop-filled-50"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KdL-au-77J">
-                                                <rect key="frame" x="276" y="8" width="66" height="57"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Button" image="icons8-chat-32"/>
-                                            </button>
-                                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7r8-Cc-UDY">
-                                                <rect key="frame" x="332" y="25" width="80" height="26"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4H1-MD-liM">
-                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="26"/>
-                                                        <subviews>
-                                                            <button opaque="NO" contentMode="scaleAspectFit" semanticContentAttribute="playback" ambiguous="YES" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKU-67-g8z">
-                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="26"/>
-                                                                <state key="normal" title="Button" image="icons8-bell-26"/>
-                                                            </button>
-                                                        </subviews>
-                                                    </stackView>
-                                                </subviews>
-                                            </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENh-vP-GRi">
-                                                <rect key="frame" x="222" y="19" width="75" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Button" image="icons8-search-filled-50"/>
-                                            </button>
-                                        </subviews>
-                                    </scrollView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dax-HS-8lX">
-                                <rect key="frame" x="218" y="617" width="141" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="icons8-signin-filled-50">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="SIGNUP">
-                                            <attributes>
-                                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <font key="NSFont" size="24" name=".SFNSText"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rfO-ed-nis">
-                                <rect key="frame" x="6" y="616" width="124" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="icons8-login-filled-50">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="LOGIN">
-                                            <attributes>
-                                                <color key="NSColor" red="0.97614067792892456" green="0.97230702638626099" blue="0.99401360750198364" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" size="24" name=".SFNSText"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                            </button>
-                        </subviews>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="GDx-80-jRZ" secondAttribute="bottom" constant="55" id="4Gw-SJ-m44"/>
-                            <constraint firstAttribute="bottom" secondItem="GDx-80-jRZ" secondAttribute="bottom" constant="45" id="7ow-FH-zEa"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GDx-80-jRZ" secondAttribute="bottom" constant="45" id="7rX-lj-X4a"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GDx-80-jRZ" secondAttribute="bottom" constant="45" id="GL1-Eg-97x"/>
-                            <constraint firstItem="GDx-80-jRZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JDm-4A-3S6"/>
-                            <constraint firstItem="shX-t1-5Jf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="P3A-ME-6x7"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GDx-80-jRZ" secondAttribute="bottom" constant="45" id="Ycn-jb-ycb"/>
-                            <constraint firstItem="GDx-80-jRZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="byk-fR-qpR"/>
-                            <constraint firstAttribute="bottom" secondItem="GDx-80-jRZ" secondAttribute="bottom" constant="45" id="enB-wq-bsz"/>
-                            <constraint firstAttribute="bottom" secondItem="GDx-80-jRZ" secondAttribute="bottom" constant="55" id="gxW-9B-Klz"/>
-                            <constraint firstItem="GDx-80-jRZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="hYg-xY-RGn"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="shX-t1-5Jf" secondAttribute="trailing" id="lwX-nR-zZ6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GDx-80-jRZ" secondAttribute="trailing" id="mGH-Gt-7wd"/>
-                            <constraint firstItem="shX-t1-5Jf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qDU-56-KJs"/>
-                            <constraint firstAttribute="bottom" secondItem="GDx-80-jRZ" secondAttribute="bottom" constant="55" id="ud3-O3-5sB"/>
-                            <constraint firstItem="shX-t1-5Jf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vkz-sz-1tC"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GDx-80-jRZ" secondAttribute="bottom" constant="20" id="xK7-Ps-2BU"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
                     <connections>
                         <outlet property="searchDisplayController" destination="fB8-Zh-HEq" id="Wt7-cV-oGw"/>
                     </connections>
@@ -155,7 +22,6 @@
                 <searchDisplayController id="fB8-Zh-HEq">
                     <connections>
                         <outlet property="delegate" destination="BYZ-38-t0r" id="slV-vQ-Xwc"/>
-                        <outlet property="searchBar" destination="p8L-UG-H5x" id="zWu-5z-nzp"/>
                         <outlet property="searchContentsController" destination="BYZ-38-t0r" id="hLT-bc-Xox"/>
                         <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="OVJ-er-gfL"/>
                         <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="e2Y-Pb-Oa4"/>
@@ -180,16 +46,4 @@
             <point key="canvasLocation" x="809" y="-12"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Sea Blue" width="1280" height="800"/>
-        <image name="filter" width="50" height="50"/>
-        <image name="icons8-barbershop-filled-50" width="50" height="50"/>
-        <image name="icons8-bell-26" width="26" height="26"/>
-        <image name="icons8-chat-32" width="32" height="32"/>
-        <image name="icons8-code-50" width="50" height="50"/>
-        <image name="icons8-login-filled-50" width="50" height="50"/>
-        <image name="icons8-musical-notes-filled-50" width="50" height="50"/>
-        <image name="icons8-search-filled-50" width="50" height="50"/>
-        <image name="icons8-signin-filled-50" width="50" height="50"/>
-    </resources>
 </document>
