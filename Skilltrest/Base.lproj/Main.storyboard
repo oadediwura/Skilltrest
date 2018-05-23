@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Urd-oV-JSq">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -10,40 +10,129 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Home-->
+        <scene sceneID="IBy-hv-u8n">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Skilltrest" customModuleProvider="target" sceneMemberID="viewController">
-                    <connections>
-                        <outlet property="searchDisplayController" destination="fB8-Zh-HEq" id="Wt7-cV-oGw"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="fB8-Zh-HEq">
-                    <connections>
-                        <outlet property="delegate" destination="BYZ-38-t0r" id="slV-vQ-Xwc"/>
-                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="hLT-bc-Xox"/>
-                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="OVJ-er-gfL"/>
-                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="e2Y-Pb-Oa4"/>
-                    </connections>
-                </searchDisplayController>
-            </objects>
-            <point key="canvasLocation" x="53.600000000000001" y="32.833583208395808"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="h81-yd-u7e">
-            <objects>
-                <viewController id="gb6-BP-evn" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleAspectFill" id="Akn-MY-jcO">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                <viewController title="Home" id="Urd-oV-JSq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gS0-Na-KLo" userLabel="Background">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cYf-kQ-P9X">
+                                <rect key="frame" x="0.0" y="20" width="414" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </scrollView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Sea Blue" translatesAutoresizingMaskIntoConstraints="NO" id="PVR-kH-g9l">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6ES-TF-DY9">
+                                <rect key="frame" x="119" y="57" width="123" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="99" translatesAutoresizingMaskIntoConstraints="NO" id="5t8-tk-ltL">
+                                <rect key="frame" x="16" y="204" width="348" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2V-1w-af6">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <state key="normal" image="music icon"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qV-kv-mpn">
+                                        <rect key="frame" x="149" y="0.0" width="50" height="50"/>
+                                        <state key="normal" image="code logo"/>
+                                        <connections>
+                                            <segue destination="f89-8k-CEm" kind="show" id="mII-dE-hv6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVU-t8-4NO">
+                                        <rect key="frame" x="298" y="0.0" width="50" height="50"/>
+                                        <state key="normal" image="barbershop"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="center" fixedFrame="YES" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="SUV-qc-Fyi">
+                                <rect key="frame" x="4" y="135" width="399" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <searchBar contentMode="redraw" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xsC-eU-xD1">
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="56"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yr9-GE-0iH">
+                                        <rect key="frame" x="349" y="0.0" width="50" height="56"/>
+                                        <state key="normal" image="filter"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FDj-cA-ihB">
+                                <rect key="frame" x="4" y="637" width="414" height="50"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Item" image="home" id="mH8-z3-adV"/>
+                                    <barButtonItem title="Item" image="bell2" width="68" id="e7c-DE-6Dp"/>
+                                    <barButtonItem title="Item" image="chat-32" width="132" id="urK-6R-BgO"/>
+                                    <barButtonItem title="Item" image="calander 3" width="90" id="R1d-7f-553"/>
+                                    <barButtonItem title="Item" image="user" width="98" id="X8m-9d-JnE"/>
+                                </items>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </toolbar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="3eE-jn-sFi"/>
+                        <viewLayoutGuide key="safeArea" id="tpI-k8-fp0"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="swK-43-AN3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-526.08695652173913" y="-148.36956521739131"/>
+        </scene>
+        <!--Results for Tech-->
+        <scene sceneID="6pU-9a-IBh">
+            <objects>
+                <viewController title="Results for Tech" id="f89-8k-CEm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ngN-Se-Jzd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sea Blue" translatesAutoresizingMaskIntoConstraints="NO" id="bFs-r0-nwF">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Results for Tech" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dec-bk-x2O">
+                                <rect key="frame" x="101" y="36" width="237" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Gwg-HM-B3A" firstAttribute="bottom" secondItem="bFs-r0-nwF" secondAttribute="bottom" id="9Xc-E3-k8K"/>
+                            <constraint firstItem="bFs-r0-nwF" firstAttribute="top" secondItem="Gwg-HM-B3A" secondAttribute="top" id="O89-hB-duq"/>
+                            <constraint firstItem="Gwg-HM-B3A" firstAttribute="trailing" secondItem="bFs-r0-nwF" secondAttribute="trailing" id="RRS-D8-mK7"/>
+                            <constraint firstItem="bFs-r0-nwF" firstAttribute="leading" secondItem="Gwg-HM-B3A" secondAttribute="leading" id="bb5-bD-8am"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gwg-HM-B3A"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9z2-MX-DYk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lIM-av-bZn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="809" y="-12"/>
+            <point key="canvasLocation" x="231.8840579710145" y="-148.36956521739131"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Sea Blue" width="1280" height="800"/>
+        <image name="barbershop" width="50" height="50"/>
+        <image name="bell2" width="50" height="50"/>
+        <image name="calander 3" width="50" height="50"/>
+        <image name="chat-32" width="32" height="32"/>
+        <image name="code logo" width="50" height="50"/>
+        <image name="filter" width="50" height="50"/>
+        <image name="home" width="50" height="50"/>
+        <image name="music icon" width="50" height="50"/>
+        <image name="user" width="50" height="50"/>
+    </resources>
 </document>
