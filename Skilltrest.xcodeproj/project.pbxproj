@@ -12,16 +12,27 @@
 		12A30F9620B3DD570011BAF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12A30F9420B3DD570011BAF4 /* Main.storyboard */; };
 		12A30F9820B3DD640011BAF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12A30F9720B3DD640011BAF4 /* Assets.xcassets */; };
 		12A30F9B20B3DD650011BAF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12A30F9920B3DD650011BAF4 /* LaunchScreen.storyboard */; };
+		3744A10F20B6898200D37920 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3744A10E20B6898200D37920 /* MapKit.framework */; };
+		3744A11220B6899000D37920 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3744A11120B6899000D37920 /* AudioToolbox.framework */; };
+		3744A11620B6967C00D37920 /* Emancipate..png in Resources */ = {isa = PBXBuildFile; fileRef = 3744A11320B6967B00D37920 /* Emancipate..png */; };
+		3744A11720B6967C00D37920 /* sales present.png in Resources */ = {isa = PBXBuildFile; fileRef = 3744A11420B6967C00D37920 /* sales present.png */; };
+		3744A11820B6967C00D37920 /* 2018.png in Resources */ = {isa = PBXBuildFile; fileRef = 3744A11520B6967C00D37920 /* 2018.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		12A30F8D20B3DD570011BAF4 /* Skilltrest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skilltrest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12A30F9020B3DD570011BAF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		12A30F9220B3DD570011BAF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		12A30F9220B3DD570011BAF4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ViewController.swift; sourceTree = "<group>"; };
 		12A30F9520B3DD570011BAF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		12A30F9720B3DD640011BAF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12A30F9A20B3DD650011BAF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12A30F9C20B3DD650011BAF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3744A10E20B6898200D37920 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3744A11020B6899000D37920 /* Skilltrest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Skilltrest.entitlements; sourceTree = "<group>"; };
+		3744A11120B6899000D37920 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		3744A11320B6967B00D37920 /* Emancipate..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Emancipate..png; sourceTree = "<group>"; };
+		3744A11420B6967C00D37920 /* sales present.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sales present.png"; sourceTree = "<group>"; };
+		3744A11520B6967C00D37920 /* 2018.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2018.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +40,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3744A10F20B6898200D37920 /* MapKit.framework in Frameworks */,
+				3744A11220B6899000D37920 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +53,7 @@
 			children = (
 				12A30F8F20B3DD570011BAF4 /* Skilltrest */,
 				12A30F8E20B3DD570011BAF4 /* Products */,
+				3744A10D20B6898200D37920 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +68,10 @@
 		12A30F8F20B3DD570011BAF4 /* Skilltrest */ = {
 			isa = PBXGroup;
 			children = (
+				3744A11520B6967C00D37920 /* 2018.png */,
+				3744A11320B6967B00D37920 /* Emancipate..png */,
+				3744A11420B6967C00D37920 /* sales present.png */,
+				3744A11020B6899000D37920 /* Skilltrest.entitlements */,
 				12A30F9020B3DD570011BAF4 /* AppDelegate.swift */,
 				12A30F9220B3DD570011BAF4 /* ViewController.swift */,
 				12A30F9420B3DD570011BAF4 /* Main.storyboard */,
@@ -62,6 +80,15 @@
 				12A30F9C20B3DD650011BAF4 /* Info.plist */,
 			);
 			path = Skilltrest;
+			sourceTree = "<group>";
+		};
+		3744A10D20B6898200D37920 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3744A11120B6899000D37920 /* AudioToolbox.framework */,
+				3744A10E20B6898200D37920 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +123,14 @@
 				TargetAttributes = {
 					12A30F8C20B3DD570011BAF4 = {
 						CreatedOnToolsVersion = 9.3.1;
+						SystemCapabilities = {
+							com.apple.InterAppAudio = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -122,9 +157,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3744A11820B6967C00D37920 /* 2018.png in Resources */,
 				12A30F9B20B3DD650011BAF4 /* LaunchScreen.storyboard in Resources */,
+				3744A11720B6967C00D37920 /* sales present.png in Resources */,
 				12A30F9820B3DD640011BAF4 /* Assets.xcassets in Resources */,
 				12A30F9620B3DD570011BAF4 /* Main.storyboard in Resources */,
+				3744A11620B6967C00D37920 /* Emancipate..png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +318,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Skilltrest/Skilltrest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZUGS2XHW7U;
 				INFOPLIST_FILE = Skilltrest/Info.plist;
@@ -298,6 +337,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Skilltrest/Skilltrest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZUGS2XHW7U;
 				INFOPLIST_FILE = Skilltrest/Info.plist;
